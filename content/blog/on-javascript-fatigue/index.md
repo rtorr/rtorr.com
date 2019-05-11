@@ -1,6 +1,7 @@
 ---
 title: On JavaScript Fatigue
 date: "2015-12-28"
+description: ""
 ---
 
 Short background: I have been doing front end development professionally for 7 years, but personally started about 12 years ago. This is just to illustrate  
