@@ -27,12 +27,9 @@ After looking over `tsconfig.json`, make it look like this
 ```json
 {
   "compilerOptions": {
-    "target": "ESNEXT",
-    "module": "es2015",
     "allowJs": true,
     "checkJs": true,
-    "strict": true,
-    "esModuleInterop": true
+    "strict": true
   }
 }
 ```
