@@ -65,7 +65,7 @@ ReactDOM.render(
 
 , is nearly an impossible task. This is not to mention all of the written documentation.
 
-We should be able to copy and pase
+We should be able to copy and paste
 
 ```javascript
 import React from "react"
