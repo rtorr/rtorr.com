@@ -27,12 +27,12 @@ const initialState = {
   age: undefined,
   // type array of strings
   cars: undefined,
-  // type deep object {height: string, shoe_size: number}
+  // type deep object {height: string, shoeSize: number}
   metaData: undefined,
 }
 // initialState.cars.map()
 // > TypeError: initialState.cars is undefined
-// console.log(initialState.metaData.test)
+// console.log(initialState.metaData.shoeSize)
 // > TypeError: initialState.metaData is undefined
 ```
 
@@ -54,7 +54,7 @@ const initialState = {
 // > "object"
 // initialState.cars.map()
 // > TypeError: initialState.cars is null
-// console.log(initialState.metaData.test)
+// console.log(initialState.metaData.shoeSize)
 // > TypeError: initialState.metaData is null
 ```
 
@@ -69,13 +69,24 @@ const initialState = {
 
 ### Preference
 
-My preference, which has in my experience been less error prone. The only time I will use null as a default is if some API I am using uses null.
+My preference, which has in my experience been less error prone. The only time I will use null as a default is if some API I am using uses null, and that will be used in state.
+
+1. It describes to future users what state will be availble
+2. It is less error prone than other default types as described above
+3. It does not limit the `typeof` operator
+4. It does not tend to give as many false positives
 
 ```javascript
 const initialState = {
   age: undefined,
   name: undefined,
   cars: [],
-  metaData: { height: undefined, shoe_size: undefined },
+  metaData: { height: undefined, shoeSize: undefined },
 }
+// typeof initialState.name
+// > "undefined"
+// initialState.cars.map()
+// > works, no error
+// console.log(initialState.metaData.shoeSize)
+// > undefined
 ```
