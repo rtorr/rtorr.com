@@ -35,6 +35,21 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
+        <p>
+          Have something in the post you want to fix?{" "}
+          <a
+            href={`https://github.com/rtorr/rtorr.com/edit/master/content/blog${
+              this.props.location.pathname
+            }index.md`}
+          >
+            Send a PR!
+          </a>
+        </p>
+        <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
         <Bio />
 
         <ul
