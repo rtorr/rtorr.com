@@ -4,13 +4,6 @@ date: "2019-05-11"
 description: "ways you can use typescript without fully committing"
 ---
 
-Typescript is fantastic. It will never be as sound as something like elm or haskell, but it is what it is, and you should probably use it.
-The benifits of typescript itself can be read across the internet.
-This post isn't the first or last to talk about typescript. What this post aims to achive is showing how you can _use typescript_ without having to fully
-commit to writing typescript yourself.
-
-Althought there are great projects like [parcel](https://parceljs.org/) and [tsdx](https://github.com/palmerhq/tsdx), setting up new (or even worse) or already-in-production apps to use typescript is not exactly easy. It takes time. Lots of confusing time.
-
 Typescript is fantastic. It will never be as sound as something like elm or Haskell, but it is what it is, and you should probably use it. The benefits of typescript itself can be read across the internet. This post isn’t the first or last to talk about typescript. What this post aims to achieve is showing how you can use typescript without having to fully commit to writing typescript yourself.
 
 Although there are great projects like [parcel](https://parceljs.org/) and [tsdx](https://github.com/palmerhq/tsdx), setting up new (or even worse) or already-in-production apps to use typescript is not exactly easy. It takes time. Lots of confusing time.
